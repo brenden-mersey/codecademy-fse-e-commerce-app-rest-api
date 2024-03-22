@@ -1,11 +1,20 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
+app.use(bodyParser.json());
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.json({ info: 'Node.js, Express, and Postgres API' });
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`E-commerce app listening on port ${port}`);
+  console.log(`Go to http://localhost:${port} in the URL bar of your browser to view app.`);
 });

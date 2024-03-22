@@ -1,7 +1,7 @@
 {
   "name": "codecademy-fse-e-commerce-app-rest-api",
   "version": "1.0.0",
-  "description": "abc",
+  "description": "RESTful API with Node.js, Express, and PostgreSQL.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,8 @@
   "author": "Brenden Mersey",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "pg": "^8.11.3"
   }
 }
